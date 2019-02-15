@@ -47,9 +47,9 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<ul>
-							<li class="active"><a href="main_page.jsp">메인페이지</a></li>
-							<li><a href="recommand_list.jsp">JMT 추천맛집</a></li>
-							<li><a href="review_list.jsp">리뷰 게시판</a></li>
+							<li ><a href="main_page.jsp">메인페이지</a></li>
+							<li ><a href="recommand_list.jsp">JMT 추천맛집</a></li>
+							<li class="active"><a href="review_list.jsp">리뷰 게시판</a></li>
 							<li><a href="my_page_main.jsp">마이페이지</a></li>
 						
 						</ul>

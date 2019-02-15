@@ -47,10 +47,10 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<ul>
-							<li class="active"><a href="main_page.jsp">메인페이지</a></li>
+							<li ><a href="main_page.jsp">메인페이지</a></li>
 							<li><a href="recommand_list.jsp">JMT 추천맛집</a></li>
 							<li><a href="review_list.jsp">리뷰 게시판</a></li>
-							<li><a href="my_page_main.jsp">마이페이지</a></li>
+							<li class="active" ><a href="my_page_main.jsp">마이페이지</a></li>
 						
 						</ul>
 					</nav>
@@ -74,20 +74,19 @@
 		<div id="sidebar" class="2u">
 							<section>
 								<header>
-									
 									<h3>마이페이지</h3>
-									
 								</header>
 								<br>
 								<p>xxx님 </p>
 								<ul class="default">
-									<li><a href="#">내가 쓴 글</a></li>
-									<li><a href="#">내가 찜한 식당</a></li>
-									<li><a href="#">개인정보수정</a></li>
+									<li><a href="my_page_bbs.jsp">내가 쓴 글</a></li>
+									<li><a href="my_page_restaurant.jsp">내가 찜한 식당</a></li>
+									<li><a href="member_update.jsp">개인정보수정</a></li>
 									
 								</ul>
 							</section>
-						</div>			
+			
+		</div>			
 			
 			<div id="content" class="8u skel-cell-important">
 							<section>
