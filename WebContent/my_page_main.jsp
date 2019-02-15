@@ -47,10 +47,10 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<ul>
-							<li class="active"><a href="main_page.jsp">메인페이지</a></li>
-							<li><a href="recommand_list.jsp">JMT 추천맛집</a></li>
+							<li ><a href="main_page.jsp">메인페이지</a></li>
+							<li  ><a href="recommand_list.jsp">JMT 추천맛집</a></li>
 							<li><a href="review_list.jsp">리뷰 게시판</a></li>
-							<li><a href="my_page_main.jsp">마이페이지</a></li>
+							<li class="active"><a href="my_page_main.jsp">마이페이지</a></li>
 						
 						</ul>
 					</nav>
@@ -68,9 +68,9 @@
 <!--
 여기서부터 메인부분 
  -->			
- 
  	<div class="row">
-		<div id="sidebar" class="2u">
+		
+			<div id="sidebar" class="2u">
 							<section>
 								<header>
 									<h3>마이페이지</h3>
@@ -78,38 +78,15 @@
 								<br>
 								<p>xxx님 </p>
 								<ul class="default">
-									<li><a href="#">내가 쓴 글</a></li>
-									<li><a href="#">내가 찜한 식당</a></li>
-									<li><a href="#">개인정보수정</a></li>
+									<li><a href="my_page_bbs.jsp">내가 쓴 글</a></li>
+									<li><a href="my_page_restaurant.jsp">내가 찜한 식당</a></li>
+									<li><a href="member_update.jsp">개인정보수정</a></li>
 									
 								</ul>
 							</section>
 			
 		</div>	
 			
-			<div id="content" class="8u skel-cell-important">
-							<section>
-								<header>
-									<h2>내가 쓴글</h2>
-								</header>
-							<br><br>
-							
-							
-								<table border="1">
-								<col width="100"><col width="500">
-								<tr>
-									<td rowspan="2">사진</td><td>제목</td>
-								</tr>
-								<tr>
-									<td>내용</td>
-								</tr>
-								
-								
-								
-								</table> 
-						
-							</section>
-						</div>
 						
 						
 				

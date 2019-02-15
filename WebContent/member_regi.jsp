@@ -104,10 +104,10 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<ul>
-							<li class="active"><a href="main_page.jsp">메인페이지</a></li>
+							<li ><a href="main_page.jsp">메인페이지</a></li>
 							<li><a href="recommand_list.jsp">JMT 추천맛집</a></li>
 							<li><a href="review_list.jsp">리뷰 게시판</a></li>
-							<li><a href="my_page_main.jsp">마이페이지</a></li>
+							<li class="active"><a href="my_page_main.jsp">마이페이지</a></li>
 						
 						</ul>
 					</nav>
@@ -125,7 +125,7 @@
 <!--
 여기서부터 메인부분 
  -->			
-			<div id="wrap">
+			<div id="wrap" style="margin-left: 700px;">
 		<br><br>
 		<b><font size="6" color="gray">회원가입</font></b>
 		<br><br><br>
