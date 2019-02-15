@@ -29,8 +29,8 @@
 				<div class="login_section">
 					<nav id="nav">
 					<ul>
-							<li class="active"><a href="index.html">로그인</a></li>
-							<li class="active"><a href="threecolumn.html">회원가입</a></li>
+							<li class="active"><a href="login_page.jsp">로그인</a></li>
+							<li class="active"><a href="member_regi.jsp">회원가입</a></li>
 
 						
 						</ul>
@@ -45,10 +45,10 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<ul>
-							<li class="active"><a href="index.html">메인페이지</a></li>
-							<li><a href="threecolumn.html">JMT 추천맛집</a></li>
-							<li><a href="twocolumn1.html">리뷰 게시판</a></li>
-							<li><a href="twocolumn2.html">마이페이지</a></li>
+							<li class="active"><a href="main_page.jsp">메인페이지</a></li>
+							<li><a href="recommand_list.jsp">JMT 추천맛집</a></li>
+							<li><a href="review_list.jsp">리뷰 게시판</a></li>
+							<li><a href="my_page_main.jsp">마이페이지</a></li>
 						
 						</ul>
 					</nav>
@@ -63,6 +63,9 @@
 	<!-- Main -->
 		<div id="main">
 			<div class="container">
+<!--
+여기서부터 메인부분 
+ -->			
 				<header>
 				
 				<div align="center">
@@ -161,14 +164,21 @@
 				
 			</div>
 		</div>
-	<!-- Footer -->
-
-<!-- 	 Copyright 
-		<div id="copyright">
-			<div class="container">
-				Design: <a href="http://templated.co">TEMPLATED</a> Images: <a href="http://unsplash.com">Unsplash</a> (<a href="http://unsplash.com/cc0">CC0</a>)
+<!-- Footer -->
+		<div id="footer">
+			<div class="container" align="center">
+	
+			<nav id="nav">
+						<ul>
+							<li class="active"><a href="team.jsp">팀소개</a></li>
+							<li class="active"><a href="sitemap.jsp">사이트맵</a></li>
+							<li class="active"><a href="qnabbs.jsp">Q&A</a></li>
+						</ul>
+					</nav>
+			
+				
 			</div>
-		</div> -->
+		</div>
 
 	</body>
 </html>

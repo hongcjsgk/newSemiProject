@@ -169,8 +169,36 @@
 		font-size: 3em;
 	}
 	
-	#sidebar
-	{
+	#sidebar{
+	display: inline-block;
+			padding: 0em 3em;
+			border-radius: 40px;
+			background: #c0c0c0;
+	}
+	#sidebar > ul 
+		{
+			width : 200px;
+			display: inline-block;
+		}
+	
+	
+		#sidebar > ul > li
+		{
+			width : 200px;
+			display: inline-block;
+		}
+	#sidebar > ul > li > a{
+		display: block;
+				padding: 1.3em 1.5em;
+				letter-spacing: 1px;
+				text-decoration: none;
+				text-transform: uppercase;
+				font-weight: 200;
+				font-size: 1em;
+				outline: 0;
+				color: #7b7b7b;
+				width : 200px;
+	
 	}
 	
 	#sidebar header h2
