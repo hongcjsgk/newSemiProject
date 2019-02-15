@@ -78,7 +78,7 @@
 						<section>
 							<a href="#" class="image full"><img src="images/pics01.jpg" alt="" /></a>
 							<p>역삼역</p>
-							<p>돼지고기집1</p>
+							<p>돼지고기11집1</p>
 							<p>가격대</p>
 							
 							<a href="#" class="button">음식점 상세보기</a>
