@@ -22,7 +22,9 @@
 			<link rel="stylesheet" type="text/css" href="css/style.css" />
 	</head>
 	<body class="homepage">
-
+<script type="text/javascript">
+	document.body.style.zoom = 0.67;
+</script>
 	<!-- Header -->
 		<div id="header">
 			<div class="container">
@@ -66,9 +68,76 @@
 <!--
 여기서부터 메인부분 
  -->			
-			
-			
-			
+ 
+ 	<div class="row">
+		
+			<div id="sidebar" class="2u">						
+							<section>
+								<header>
+									
+									<h3>마이페이지</h3>
+									
+								</header>
+								<br>
+								<p>xxx님 </p>
+								
+								<ul class="default" style="width: 200px;">
+									<li><a href="#">내가 쓴 글</a></li>
+									<li><a href="#">내가 찜한 식당</a></li>
+									<li><a href="#">개인정보수정</a></li>
+									
+								</ul>
+								
+							</section>
+
+		
+
+			</div>
+			<div id="content" class="8u skel-cell-important">
+							<section>
+								<header>
+									<h2>내가 찜한 식당</h2>
+									<span class="byline"></span>
+									<span class="byline"></span>
+								</header>
+									<div class="row">
+						<div class="4u">
+						<section>
+							<a href="#" class="image full"><img src="images/pics01.jpg" alt="" /></a>
+							<p>역삼역</p>
+							<p>돼지고기11123집1</p>
+							<p>가격대</p>
+							
+							<a href="#" class="button">음식점 상세보기</a>
+						</section>
+					</div> 
+						<div class="4u">
+						<section>
+							<a href="#" class="image full"><img src="images/pics01.jpg" alt="" /></a>
+							<p>역삼역</p>
+							<p>돼지고기집</p>
+							<p>가격대</p>
+							
+							<a href="#" class="button">음식점 상세보기</a>
+						</section>
+					</div>
+						<div class="4u">
+						<section>
+							<a href="#" class="image full"><img src="images/pics01.jpg" alt="" /></a>
+							<p>역삼역</p>
+							<p>돼지고기집</p>
+							<p>가격대</p>
+							
+							<a href="#" class="button">음식점 상세보기</a>
+						</section>
+					</div>  
+				</div>
+							</section>
+						</div>
+						
+						
+				
+	</div>
 			
 			
 				

@@ -331,12 +331,12 @@
 /*********************************************************************************/
 	
 	#footer
-	{ margin:0 auto; padding-top:100px; height:100px;}
-	/* {	
+	
+	 {	
 		position: relative;
 		background: #121212;
 		color: rgba(255,255,255,.4);
-	} */
+	}
 	
 	#footer header h2
 	{
@@ -353,6 +353,14 @@
 		padding: 3em 0em;
 		text-align: center;
 		color: rgba(255,255,255,.2);
+	}
+	
+	#copyright2
+	{
+		position: relative;
+		padding: 3em 0em;
+		text-align: center;
+		color: rgba(0,255,255,.2);
 	}
 	
 	#copyright .container

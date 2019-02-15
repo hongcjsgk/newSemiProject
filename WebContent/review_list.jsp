@@ -22,7 +22,9 @@
 			<link rel="stylesheet" type="text/css" href="css/style.css" />
 	</head>
 	<body class="homepage">
-
+<script type="text/javascript">
+	document.body.style.zoom = 0.67;
+</script>
 	<!-- Header -->
 		<div id="header">
 			<div class="container">

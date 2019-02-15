@@ -1,11 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE HTML>
-<!--
-	Monochromed by TEMPLATED
-    templated.co @templatedco
-    Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
+
 <html>
 	<head>
 		<title>JMT</title>
@@ -20,9 +16,14 @@
 
 			<link rel="stylesheet" type="text/css" href="css/skel-noscript.css" />
 			<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+			
+			
 	</head>
 	<body class="homepage">
-
+<script type="text/javascript">
+	document.body.style.zoom = 0.67;
+</script>
 	<!-- Header -->
 		<div id="header">
 			<div class="container">
@@ -163,12 +164,12 @@
 		</div>
 	<!-- Footer -->
 
-<!-- 	 Copyright 
+ 	 Copyright 
 		<div id="copyright">
 			<div class="container">
 				Design: <a href="http://templated.co">TEMPLATED</a> Images: <a href="http://unsplash.com">Unsplash</a> (<a href="http://unsplash.com/cc0">CC0</a>)
 			</div>
-		</div> -->
+		</div>
 
 	</body>
 </html>
