@@ -25,14 +25,14 @@
 <script type="text/javascript">
 	document.body.style.zoom = 0.67;
 </script>
-	<!-- Header -->
+<!-- Header -->
 		<div id="header">
 			<div class="container">
 				<div class="login_section">
 					<nav id="nav">
 					<ul>
-							<li class="active"><a href="index.html">로그인</a></li>
-							<li class="active"><a href="threecolumn.html">회원가입</a></li>
+							<li class="active"><a href="login_page.jsp">로그인</a></li>
+							<li class="active"><a href="member_regi.jsp">회원가입</a></li>
 
 						
 						</ul>
@@ -47,10 +47,10 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<ul>
-							<li class="active"><a href="index.html">메인페이지</a></li>
-							<li><a href="threecolumn.html">JMT 추천맛집</a></li>
-							<li><a href="twocolumn1.html">리뷰 게시판</a></li>
-							<li><a href="twocolumn2.html">마이페이지</a></li>
+							<li class="active"><a href="main_page.jsp">메인페이지</a></li>
+							<li><a href="recommand_list.jsp">JMT 추천맛집</a></li>
+							<li><a href="review_list.jsp">리뷰 게시판</a></li>
+							<li><a href="my_page_main.jsp">마이페이지</a></li>
 						
 						</ul>
 					</nav>
@@ -72,7 +72,7 @@
  	<div class="row">
 		
 			<div id="sidebar" class="2u">						
-							<section>
+							<section style="width: 200px;">
 								<header>
 									
 									<h3>마이페이지</h3>
@@ -100,7 +100,45 @@
 									<span class="byline"></span>
 									<span class="byline"></span>
 								</header>
-									<div class="row">
+					
+					
+					<div class="row">
+						<div class="4u">
+						<section>
+							<a href="#" class="image full"><img src="images/pics01.jpg" alt="" /></a>
+							<p>역삼역</p>
+							<p>돼지고기11123집1</p>
+							<p>가격대</p>
+							
+							<a href="#" class="button">음식점 상세보기</a>
+						</section>
+					</div> 
+						<div class="4u">
+						<section>
+							<a href="#" class="image full"><img src="images/pics01.jpg" alt="" /></a>
+							<p>역삼역</p>
+							<p>돼지고기집</p>
+							<p>가격대</p>
+							
+							<a href="#" class="button">음식점 상세보기</a>
+						</section>
+					</div>
+						<div class="4u">
+						<section>
+							<a href="#" class="image full"><img src="images/pics01.jpg" alt="" /></a>
+							<p>역삼역</p>
+							<p>돼지고기집</p>
+							<p>가격대</p>
+							
+							<a href="#" class="button">음식점 상세보기</a>
+						</section>
+					</div>  
+				</div>		
+				
+				
+				
+				
+				<div class="row">
 						<div class="4u">
 						<section>
 							<a href="#" class="image full"><img src="images/pics01.jpg" alt="" /></a>
@@ -152,16 +190,15 @@
 			</div>
 		</div>
 	<!-- Main -->
-
-	<!-- Footer -->
+<!-- Footer -->
 		<div id="footer">
 			<div class="container" align="center">
 	
 			<nav id="nav">
 						<ul>
-							<li class="active"><a href="index.html">팀소개</a></li>
-							<li class="active"><a href="threecolumn.html">사이트맵</a></li>
-							<li class="active"><a href="twocolumn1.html">Q&A</a></li>
+							<li class="active"><a href="team.jsp">팀소개</a></li>
+							<li class="active"><a href="sitemap.jsp">사이트맵</a></li>
+							<li class="active"><a href="qnabbs.jsp">Q&A</a></li>
 						</ul>
 					</nav>
 			

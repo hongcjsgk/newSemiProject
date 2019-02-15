@@ -25,14 +25,14 @@
 <script type="text/javascript">
 	document.body.style.zoom = 0.67;
 </script>
-	<!-- Header -->
+<!-- Header -->
 		<div id="header">
 			<div class="container">
 				<div class="login_section">
 					<nav id="nav">
 					<ul>
-							<li class="active"><a href="index.html">로그인</a></li>
-							<li class="active"><a href="threecolumn.html">회원가입</a></li>
+							<li class="active"><a href="login_page.jsp">로그인</a></li>
+							<li class="active"><a href="member_regi.jsp">회원가입</a></li>
 
 						
 						</ul>
@@ -47,10 +47,10 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<ul>
-							<li class="active"><a href="index.html">메인페이지</a></li>
-							<li><a href="threecolumn.html">JMT 추천맛집</a></li>
-							<li><a href="twocolumn1.html">리뷰 게시판</a></li>
-							<li><a href="twocolumn2.html">마이페이지</a></li>
+							<li class="active"><a href="main_page.jsp">메인페이지</a></li>
+							<li><a href="recommand_list.jsp">JMT 추천맛집</a></li>
+							<li><a href="review_list.jsp">리뷰 게시판</a></li>
+							<li><a href="my_page_main.jsp">마이페이지</a></li>
 						
 						</ul>
 					</nav>
@@ -73,9 +73,7 @@
 		<div id="sidebar" class="2u">
 							<section>
 								<header>
-									
 									<h3>마이페이지</h3>
-									
 								</header>
 								<br>
 								<p>xxx님 </p>
@@ -87,16 +85,29 @@
 								</ul>
 							</section>
 			
-						</div>	
+		</div>	
 			
 			<div id="content" class="8u skel-cell-important">
 							<section>
 								<header>
-									<h2>Left Sidebar</h2>
-									<span class="byline">Donec leo, vivamus fermentum nibh in augue praesent</span>
+									<h2>내가 쓴글</h2>
 								</header>
-								<p><a href="#" class="image full"><img src="images/pics02.jpg" alt=""></a></p>
-								<p>Maecenas pede nisl, elementum eu, ornare ac, malesuada at, erat. Proin gravida orci porttitor enim accumsan lacinia. Donec condimentum, urna non molestie semper, ligula enim ornare nibh, quis laoreet eros quam eget ante. Aliquam libero. Vivamus nisl nibh, iaculis vitae, viverra sit amet, ullamcorper vitae, turpis. Aliquam erat volutpat. Vestibulum dui sem, pulvinar sed, imperdiet nec, iaculis nec, leo. Fusce odio. Etiam arcu dui, faucibus eget, placerat vel, sodales eget, orci. Donec ornare neque ac sem. Mauris aliquet. Aliquam sem leo, vulputate sed, convallis at, ultricies quis, justo. Donec nonummy magna quis risus. Quisque eleifend. Phasellus tempor vehicula justo.</p>
+							<br><br>
+							
+							
+								<table border="1">
+								<col width="100"><col width="500">
+								<tr>
+									<td rowspan="2">사진</td><td>제목</td>
+								</tr>
+								<tr>
+									<td>내용</td>
+								</tr>
+								
+								
+								
+								</table> 
+						
 							</section>
 						</div>
 						
@@ -117,16 +128,15 @@
 			</div>
 		</div>
 	<!-- Main -->
-
-	<!-- Footer -->
+<!-- Footer -->
 		<div id="footer">
 			<div class="container" align="center">
 	
 			<nav id="nav">
 						<ul>
-							<li class="active"><a href="index.html">팀소개</a></li>
-							<li class="active"><a href="threecolumn.html">사이트맵</a></li>
-							<li class="active"><a href="twocolumn1.html">Q&A</a></li>
+							<li class="active"><a href="team.jsp">팀소개</a></li>
+							<li class="active"><a href="sitemap.jsp">사이트맵</a></li>
+							<li class="active"><a href="qnabbs.jsp">Q&A</a></li>
 						</ul>
 					</nav>
 			
