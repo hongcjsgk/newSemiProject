@@ -7,8 +7,11 @@
     templated.co @templatedco
     Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 -->
+
 <%
-member_Dto mem = (member_Dto)session.getAttribute("login");
+member_Dto mem = (member_Dto)request.getAttribute("login");
+    		session.setAttribute("longin", mem);
+    		session.setMaxInactiveInterval(60*60*3);
     		%>
 <html>
 	<head>
@@ -32,37 +35,17 @@ document.body.style.zoom = 0.67;
 	<!-- Header -->
 		<div id="header">
 			<div class="container">
-			
-			<%if(mem == null){
-				%>
-			
-			
 				<div class="login_section">
 					<nav id="nav">
 					<ul>
-							<li class="active"><a href="login_page.jsp">로그인</a></li>
-							<li class="active"><a href="member_regi.jsp">회원가입</a></li>
+							<li class="active"><span style="color: white;"><%=mem.getName() %>님 환영합니다</span></li>
+							<li class="active"><a href="login_page.jsp">로그아웃</a></li>
+							
 
 						
 						</ul>
 					</nav>
 				</div>
-				<%
-				}else{ 
-					%>
-					<div class="login_section">
-					<nav id="nav">
-					<ul>
-							<li class="active"><span style="color: white;"><%=mem.getName() %>님 환영합니다</span></li>
-							<li class="active"><a href="login_page.jsp">로그아웃</a></li>
-						<li class="active"><a href="logout.jsp">로그아웃</a></li>	
-						
-						</ul>
-					</nav>
-				</div>
-				<%
-				}
-			 %>
 				<!-- Logo -->
 					<div id="logo">
 						<h1><a href="index">JMT</a></h1>
@@ -93,70 +76,16 @@ document.body.style.zoom = 0.67;
 <!--
 여기서부터 메인부분 
  -->			
- 
- 	<div class="row">
-		
-				<div id="sidebar" class="2u">
-							<section>
-								<header>
-									<h3>마이페이지</h3>
-								</header>
-								<br>
-								<p>xxx님 </p>
-								<ul class="default">
-									<li><a href="my_page_bbs.jsp">내가 쓴 글</a></li>
-									<li><a href="my_page_restaurant.jsp">내가 찜한 식당</a></li>
-									<li><a href="member_update.jsp">개인정보수정</a></li>
-									
-								</ul>
-							</section>
-			
-		</div>	
-			<div id="content" class="8u skel-cell-important">
-							<section>
-								<header>
-									<h2>내가 찜한 식당</h2>
-									<span class="byline"></span>
-									<span class="byline"></span>
-								</header>
+				<header>
+				
+				<div align="center">
+				<ul>
+					<li><input type="text" name="search" style="width: 500px;"> <button class="button">JMT 검색</button></li>
+				</ul>
+				
+				</div>
 					
-					
-					<div class="row">
-						<div class="4u">
-						<section>
-							<a href="#" class="image full"><img src="images/pics01.jpg" alt="" /></a>
-							<p>역삼역</p>
-							<p>돼지고기11123집1</p>
-							<p>가격대</p>
-							
-							<a href="#" class="button">음식점 상세보기</a>
-						</section>
-					</div> 
-						<div class="4u">
-						<section>
-							<a href="#" class="image full"><img src="images/pics01.jpg" alt="" /></a>
-							<p>역삼역</p>
-							<p>돼지고기집</p>
-							<p>가격대</p>
-							
-							<a href="#" class="button">음식점 상세보기</a>
-						</section>
-					</div>
-						<div class="4u">
-						<section>
-							<a href="#" class="image full"><img src="images/pics01.jpg" alt="" /></a>
-							<p>역삼역</p>
-							<p>돼지고기집</p>
-							<p>가격대</p>
-							
-							<a href="#" class="button">음식점 상세보기</a>
-						</section>
-					</div>  
-				</div>		
-				
-				
-				
-				
+				</header>
 				<div class="row">
 						<div class="4u">
 						<section>
@@ -189,26 +118,48 @@ document.body.style.zoom = 0.67;
 						</section>
 					</div>  
 				</div>
-							</section>
-						</div>
-						
-						
+			<div class="row">
+						<div class="4u">
+						<section>
+							<a href="#" class="image full"><img src="images/pics01.jpg" alt="" /></a>
+							<p>역삼역</p>
+							<p>돼지고기집</p>
+							<p>가격대</p>
+							
+							<a href="#" class="button">음식점 상세보기</a>
+						</section>
+					</div> 	<div class="4u">
+						<section>
+							<a href="#" class="image full"><img src="images/pics01.jpg" alt="" /></a>
+							<p>역삼역</p>
+							<p>돼지고기집</p>
+							<p>가격대</p>
+							
+							<a href="#" class="button">음식점 상세보기</a>
+						</section>
+					</div> 	<div class="4u">
+						<section>
+							<a href="#" class="image full"><img src="images/pics01.jpg" alt="" /></a>
+							<p>역삼역</p>
+							<p>돼지고기집</p>
+							<p>가격대</p>
+							
+							<a href="#" class="button">음식점 상세보기</a>
+						</section>
+					</div> 
+				</div>
+				<div class="divider">&nbsp;</div>
+				<div class="row">
 				
-	</div>
-			
-			
-				
-	
-	
-<!--여기까지 메인부분 	-->				
 
-		<div class="divider">&nbsp;</div>	
-				<div class="row">			
+						
 				</div>
 			
 			</div>
 		</div>
 	<!-- Main -->
+
+
 <!-- Footer -->
 		<div id="footer">
 			<div class="container" align="center">

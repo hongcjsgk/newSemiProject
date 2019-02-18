@@ -12,6 +12,7 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
+				<link rel="stylesheet" type="text/css" href="css/login.css"/>
 		<link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<script src="js/skel.min.js"></script>
@@ -124,83 +125,62 @@
 			<div class="container">
 <!--
 여기서부터 메인부분 
- -->			
-			<div id="wrap" style="margin-left: 700px;">
-		<br><br>
-		<b><font size="6" color="gray">회원가입</font></b>
-		<br><br><br>
-		
-		
-		<!-- 입력한 값을 전송하기 위해 form 태그를 사용한다 -->
-		<!-- 값(파라미터) 전송은 POST 방식, 전송할 페이지는 JoinPro.jsp -->
-		<form action="regiAf.jsp" name="userInfo" method="post"
-				onsubmit="return checkValue()">
-			<table>
-				<tr>
-					<td id="title">아이디</td>
-					<td>
-						<input type="text" name="id" maxlength="50">
-						<input type="button" class="button" value="중복확인" >	
-					</td>
-				</tr>
+ -->		<form action="my_controller" method="post" >
+ <input type="hidden" name="command" value="add">
+ 
+ <div class="login-wrap2">
+	<div class="login-html">
+		<input id="tab-1" type="radio" name="tab" class="sign-in" ><label for="tab-1" class="tab"></label>
+		<input id="tab-2" type="radio" name="tab" class="sign-up"  checked="checked"><label for="tab-2" class="tab">회원가입</label>
+		<div class="login-form">
+			<div class="sign-up-htm">
+				<div class="group">
+					<label for="user" class="label">아이디</label>
+					<input id="user" name="id" type="text" class="input">
+				</div>
+				<div class="group">
+					<label for="pass" class="label">비밀번호</label>
+					<input id="pass" name="pwd" type="password" class="input" data-type="password">
+				</div>
+				<div class="group">
+					<label for="pass" class="label">비밀번호 확인</label>
+					<input id="pass_chk" type="password" class="input" data-type="password">
+				</div>
+					<div class="group">
+					<label for="pass" class="label">이름</label>
+					<input id="pass" name="name" type="text" class="input">
+				</div>
+				<div class="group">
+					<label for="pass" class="label">이메일</label>
+					<input id="pass" name="email" type="text" class="input">
+				</div>
+					<div class="group">
+					<label for="pass" class="label">핸드폰번호</label>
+					<input id="pass" name="phone" type="text" class="input">
+				</div>
 				
-				<tr>
-					<td id="title">비밀번호</td>
-					<td>
-						<input type="password" name="pwd" maxlength="50">
-					</td>
-				</tr>
+				
+					<div class="group">
+					<label for="pass" class="label">주소</label>
+				<input class="input"  type="text" id="sample4_postcode" placeholder="우편번호"><br>
+						<input class="input" type="button" onclick="sample4_execDaumPostcode()" value="우편번호 찾기"><br>
+					<input class="input"  name="address1" width="50" type="text" id="sample4_roadAddress" placeholder="도로명주소"><br>
+			<input class="input"   name="address2" maxlength="100" type="text" id="sample4_detailAddress" placeholder="상세주소">
 			
-				<tr>
-					<td id="title">비밀번호확인</td>
-					<td>
-						<input type="password" name="pwd_check" maxlength="50">
-					</td>
-				</tr>
-						
-				<tr>
-					<td id="title">이름</td>
-					<td>
-						<input type="text" name="name" maxlength="50">
-					</td>
-				</tr>
-					
-				<tr>
-					<td id="title">이메일</td>
-					<td>
-						<input type="text" name="email" maxlength="100">
-				
-					</td>
-				</tr>
-				<tr>
-					<td id="title">주소</td>
-					<td>
-						<input type="text" id="sample4_postcode" placeholder="우편번호">
-						<input type="button" onclick="sample4_execDaumPostcode()" value="우편번호 찾기"><br>
-					</td>
-				</tr>	
-				<tr>
-				<td></td>
-					<td>
-						<input  width="100" type="text" id="sample4_roadAddress" placeholder="도로명주소">
-						<input maxlength="100" type="text" id="sample4_jibunAddress" placeholder="지번주소">
-						<span id="guide" style="color:#999;display:none"></span>
-					</td>
-				</tr>
-				<tr>
-				<td></td>
-				<td>
-						<input  maxlength="100" type="text" id="sample4_detailAddress" placeholder="상세주소">
-						<input  maxlength="100" type="text" id="sample4_extraAddress" placeholder="참고항목">
-				</td>				
-				</tr>
-					
-			</table>
-			<br>
-			<input type="submit" class="button" value="가입"/>  
-			<input type="button" class="button" value="취소" onclick="goLoginForm()">
-		</form>
+				</div>		
+		<div class="group">
+					<input type="submit" class="button" value="Sign Up">
+				</div>
+
+
+				</div>
+			</div>
+		
+		</div>
 	</div>
+	</form>
+</div>
+ 
 			
 				<div class="divider">&nbsp;</div>
 	

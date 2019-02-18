@@ -1,3 +1,4 @@
+<%@page import="dto.member_Dto"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE HTML>
@@ -6,6 +7,10 @@
     templated.co @templatedco
     Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 -->
+
+<%
+member_Dto mem = (member_Dto)session.getAttribute("login");
+    		%>
 <html>
 	<head>
 		<title>JMT</title>
@@ -28,6 +33,11 @@ document.body.style.zoom = 0.67;
 	<!-- Header -->
 		<div id="header">
 			<div class="container">
+			
+			<%if(mem == null){
+				%>
+			
+			
 				<div class="login_section">
 					<nav id="nav">
 					<ul>
@@ -38,6 +48,22 @@ document.body.style.zoom = 0.67;
 						</ul>
 					</nav>
 				</div>
+				<%
+				}else{ 
+					%>
+					<div class="login_section">
+					<nav id="nav">
+					<ul>
+							<li class="active"><span style="color: white;"><%=mem.getName() %>님 환영합니다</span></li>
+							<li class="active"><a href="logout.jsp">로그아웃</a></li>			
+
+						
+						</ul>
+					</nav>
+				</div>
+				<%
+				}
+			 %>
 				<!-- Logo -->
 					<div id="logo">
 						<h1><a href="index">JMT</a></h1>
@@ -151,21 +177,7 @@ document.body.style.zoom = 0.67;
 		</div>
 	<!-- Main -->
 
-	<!-- Footer -->
-		<div id="footer">
-			<div class="container" align="center">
-	
-			<nav id="nav">
-						<ul>
-							<li class="active"><a href="index.html">팀소개</a></li>
-							<li class="active"><a href="threecolumn.html">사이트맵</a></li>
-							<li class="active"><a href="twocolumn1.html">Q&A</a></li>
-						</ul>
-					</nav>
-			
-				
-			</div>
-		</div>
+
 <!-- Footer -->
 		<div id="footer">
 			<div class="container" align="center">

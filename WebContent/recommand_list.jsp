@@ -1,3 +1,4 @@
+<%@page import="dto.member_Dto"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE HTML>
@@ -6,6 +7,9 @@
     templated.co @templatedco
     Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 -->
+<%
+member_Dto mem = (member_Dto)session.getAttribute("login");
+    		%>
 <html>
 	<head>
 		<title>JMT</title>
@@ -23,11 +27,16 @@
 	</head>
 	<body class="homepage">
 <script type="text/javascript">
-	document.body.style.zoom = 0.67;
+document.body.style.zoom = 0.67;
 </script>
-<!-- Header -->
+	<!-- Header -->
 		<div id="header">
 			<div class="container">
+			
+			<%if(mem == null){
+				%>
+			
+			
 				<div class="login_section">
 					<nav id="nav">
 					<ul>
@@ -38,6 +47,22 @@
 						</ul>
 					</nav>
 				</div>
+				<%
+				}else{ 
+					%>
+					<div class="login_section">
+					<nav id="nav">
+					<ul>
+							<li class="active"><span style="color: white;"><%=mem.getName() %>님 환영합니다</span></li>
+					<li class="active"><a href="logout.jsp">로그아웃</a></li>		
+
+						
+						</ul>
+					</nav>
+				</div>
+				<%
+				}
+			 %>
 				<!-- Logo -->
 					<div id="logo">
 						<h1><a href="index">JMT</a></h1>
@@ -47,8 +72,8 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<ul>
-							<li ><a href="main_page.jsp">메인페이지</a></li>
-							<li class="active"><a href="recommand_list.jsp">JMT 추천맛집</a></li>
+							<li class="active"><a href="main_page.jsp">메인페이지</a></li>
+							<li><a href="recommand_list.jsp">JMT 추천맛집</a></li>
 							<li><a href="review_list.jsp">리뷰 게시판</a></li>
 							<li><a href="my_page_main.jsp">마이페이지</a></li>
 						

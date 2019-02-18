@@ -1,4 +1,3 @@
-<%@page import="dto.member_Dto"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE HTML>
@@ -7,9 +6,6 @@
     templated.co @templatedco
     Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 -->
-<%
-member_Dto mem = (member_Dto)session.getAttribute("login");
-    		%>
 <html>
 	<head>
 		<title>JMT</title>
@@ -21,7 +17,8 @@ member_Dto mem = (member_Dto)session.getAttribute("login");
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-panels.min.js"></script>
 		<script src="js/init.js"></script>
-
+		
+		<link rel="stylesheet" type="text/css" href="css/login.css"/>
 			<link rel="stylesheet" type="text/css" href="css/skel-noscript.css" />
 			<link rel="stylesheet" type="text/css" href="css/style.css" />
 	</head>
@@ -32,11 +29,6 @@ document.body.style.zoom = 0.67;
 	<!-- Header -->
 		<div id="header">
 			<div class="container">
-			
-			<%if(mem == null){
-				%>
-			
-			
 				<div class="login_section">
 					<nav id="nav">
 					<ul>
@@ -47,22 +39,6 @@ document.body.style.zoom = 0.67;
 						</ul>
 					</nav>
 				</div>
-				<%
-				}else{ 
-					%>
-					<div class="login_section">
-					<nav id="nav">
-					<ul>
-							<li class="active"><span style="color: white;"><%=mem.getName() %>님 환영합니다</span></li>
-						<li class="active"><a href="logout.jsp">로그아웃</a></li>	
-
-						
-						</ul>
-					</nav>
-				</div>
-				<%
-				}
-			 %>
 				<!-- Logo -->
 					<div id="logo">
 						<h1><a href="index">JMT</a></h1>
@@ -92,61 +68,46 @@ document.body.style.zoom = 0.67;
 			<div class="container">
 <!--
 여기서부터 메인부분 
- -->			
+ -->		
  
- 	<div class="row">
-		<div id="sidebar" class="2u">
-							<section>
-								<header>
-									<h3>마이페이지</h3>
-								</header>
-								<br>
-								<p>xxx님 </p>
-								<ul class="default">
-									<li><a href="my_page_bbs.jsp">내가 쓴 글</a></li>
-									<li><a href="my_page_restaurant.jsp">내가 찜한 식당</a></li>
-									<li><a href="member_update.jsp">개인정보수정</a></li>
-									
-								</ul>
-							</section>
-			
-		</div>	
-			
-			<div id="content" class="8u skel-cell-important">
-							<section>
-								<header>
-									<h2>내가 쓴글</h2>
-								</header>
-							<br><br>
-							
-							
-								<table border="1">
-								<col width="100"><col width="500">
-								<tr>
-									<td rowspan="2">사진</td><td>제목</td>
-								</tr>
-								<tr>
-									<td>내용</td>
-								</tr>
-								
-								
-								
-								</table> 
-						
-							</section>
-						</div>
-						
-						
-				
+	<form name="loginInfo" onsubmit="return checkValue()" action="my_controller" method="post">
+		<input type="hidden" name="command" value="login">
+<div class="login-wrap1">
+	<div class="login-html">
+		<input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
+		<input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab"></label>
+		<div class="login-form">
+			<div class="sign-in-htm">
+				<div class="group">
+					<label for="user" class="label">아이디</label>
+					<input id="user" name="id" type="text" class="input">
+				</div>
+				<div class="group">
+					<label for="pass" class="label">비밀번호</label>
+					<input id="pass" name="pwd" type="password" class="input" data-type="password">
+				</div>
+				<div class="group">
+					<input id="check" type="checkbox" class="check" checked>
+					<label for="check"><span class="icon"></span>아이디 저장</label>
+				</div>
+				<div class="group">
+					<input type="submit" class="button" value="로그인">
+				</div>
+				<div class="hr"></div>
+				<div class="foot-lnk">
+					<a href="#forgot">비밀번호 찾기</a>
+				</div>
+			</div>
+
+		</div>
 	</div>
-			
-			
-				
+</div>
+</form>				
 	
 	
 <!--여기까지 메인부분 	-->				
 
-		<div class="divider">&nbsp;</div>	
+
 				<div class="row">			
 				</div>
 			
@@ -154,7 +115,7 @@ document.body.style.zoom = 0.67;
 		</div>
 	<!-- Main -->
 
-<!-- Footer -->
+	<!-- Footer -->
 		<div id="footer">
 			<div class="container" align="center">
 	
